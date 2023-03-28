@@ -83,11 +83,11 @@ class UserDetailsPage extends StatelessWidget {
                   ),
                   textAlign: TextAlign.left,
                 ),
-                FlatButton(
+                IconButton(
                   onPressed: () {
                     customLaunch('mailto:${user.email}?subject=Contact%20Information&body=Type%20your%20mail%20here');
                   },
-                  child: Icon(
+                  icon: Icon(
                     Icons.email,
                   ),
                 ),
