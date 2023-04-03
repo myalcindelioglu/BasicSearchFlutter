@@ -9,6 +9,8 @@ import 'package:searching_list_with_json/data/data_model.dart';
 //   var list = json.decode(responseBody) as List<dynamic>;
 //   var users = list.map((e) => User.fromJson(e)).toList();
 //   return users;
+
+
 // }
 
 Future<List<User>> fetchUsers() async {
