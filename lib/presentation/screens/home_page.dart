@@ -62,8 +62,12 @@ class _HomePageState extends State<HomePage> {
             _usersDisplay = _users.where((u) {
               var fName = u.firstName.toLowerCase();
               var lName = u.lastName.toLowerCase();
+              var email = u.email.toLowerCase();
               var job = u.job.toLowerCase();
-              return fName.contains(searchText) || lName.contains(searchText) || job.contains(searchText);
+              return fName.contains(searchText) ||
+                  lName.contains(searchText) ||
+                  job.contains(searchText) ||
+                  email.contains(searchText);
             }).toList();
           });
         },
